@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "../../utils/show.h"
-#include "../libs/dynamic-linked-list.h"
+#include "dynamic-linked-list.h"
 
 typedef struct Node {
     int value;
