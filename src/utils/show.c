@@ -282,3 +282,8 @@ void show_attr_dob(char *key, double value) {
     _reset();
     printf("%.2lf\n", value);
 }
+
+void show_repeated(char *string, int n) {
+    for (int i = 0; i < n; i++)
+        printf("%s", string);
+}

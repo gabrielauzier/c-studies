@@ -40,3 +40,4 @@ void show_attr_int(char *key, int value);
 void show_attr_dob(char *key, double value);
 
 void show_text_align_center(char *string, int lineSize);
+void show_repeated(char *string, int n);
