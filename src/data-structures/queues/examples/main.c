@@ -3,14 +3,13 @@
 
 #include "../../../utils/show.h"
 #include "patients-queue.h"
+#include "students-deck.h"
 
 void init_main_() {
     init_show();
 }
 
-int main() {
-    init_main_();
-
+void patients_queue() {
     show_header("Example - Patients (Dynamic Queue)", BLUE);
 
     PatientsQueue *queue = pq_create_queue();
@@ -26,6 +25,20 @@ int main() {
 
     pq_delete_patient(queue);
     pq_print_queue(queue);
+}
+
+void students_deck() {
+    show_header("Example - Students (Deck)", BLUE);
+    StudentsDeck *deck = stdeck_create_queue();
+
+    StudentsDeckNode *a = stdeck_create_node(1, 1, "Gabriel");
+}
+
+int main() {
+    init_main_();
+
+//    patients_queue();
+    students_deck();
 
     return 0;
 }
