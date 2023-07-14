@@ -31,7 +31,7 @@ ArithmeticExpressionNode artexpstack_peek_node(ArithmeticExpressionStack *src);
 
 int artexpstack_is_empty(ArithmeticExpressionStack *src);
 
-void artexpstack_delete_stack(ArithmeticExpressionNode *src);
+void artexpstack_delete_stack(ArithmeticExpressionStack *src);
 void artexpstack_print_stack(ArithmeticExpressionStack *src);
 void artexpstack_print_node(ArithmeticExpressionNode node);
 
