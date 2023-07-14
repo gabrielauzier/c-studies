@@ -52,7 +52,7 @@ int pq_insert_patient(PatientsQueue *src, Patient newPatient) {
 
     newElement = malloc(sizeof (PatientsQueueElement));
 
-    if (newElement == NULL) returnf 0;
+    if (newElement == NULL) return 0;
 
     newElement->patient = newPatient;
 //    strcpy(newElement->patient.name, newPatient.name);
